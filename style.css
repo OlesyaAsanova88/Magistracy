@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.menu-nav {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 18.75px;
+color: #005AAA;
+
+}
+.menu-nav:hover {
+   color: #0770cc;
+   
+}
+
+.header {
+   border-bottom: 3px solid #005AAA;
+   padding: 36px 0;
+   
+}
+.menu {
+   padding: 0 10px;
+   border-left: 1px solid #005AAA;
+   color: #005AAA;
+}
+
+.icon {
+   margin-right: 10px;
+}
+
+.phone {
+   padding-right: 15px;
+}
+.nav-active {
+   background-color: #98c7fdfb;
+   
+}
+.nav-active a {
+   color: #005AAA;
+   font-weight: bold;
+}
+.nav-active a:hover {
+   color: aliceblue;
+}
+
+.nav-sub {
+   
+   padding: 20px 25px;
+   text-transform: uppercase;
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+
+   color: #777777;
+}
+
+.space {
+   width: 100%;
+   min-height: 636px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(./img/ОБЛАКА\ 2.png);
+   
+}
+
+.abut {
+   padding: 45.5px 0;
+   
+}
+
+.sub-link {
+   font-size: 16px;
+   color: #000;
+   margin-right: 50px;  
+}
+
+.sub-lust {
+   margin-right: 140px;
+}
+
+.btn {
+   padding: 15px 30px;
+   border-radius: 50px;
+   margin-left: 20px;
+}
+
+.btn-two {
+   color: #fff;
+   background-color: #005AAA;
+}
+.btn-two:hover {
+   color: #fff;
+   background-color: #0770cc;
+   
+}
+
+.title {
+   color: #005AAA;
+}
+.head {
+   font-family: 'Roboto', sans-serif;
+   font-style: Medium;
+   font-size: 64px;
+   line-height: 83px;
+}
+
+.choice {
+   position: relative;
+   margin-top: 100px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 45px;
+   margin-bottom: 0;
+   
+}
+
+.line {
+   position: absolute;
+   left: 417px;
+   width: 297px;
+   height: 3px;
+}
+
+.numeric {
+   margin-top: 116.8px;
+   margin-bottom: 174px;
+}
+
+.num {
+   color: #005AAA;
+   font-family: 'Roboto', sans-serif;
+   font-style: 700;
+   font-size: 80px;
+   line-height: 94px;
+}
+
+.num-text {
+   display: inline-block;
+   margin-left: 15px;
+   font-family: 'Roboto', sans-serif;
+   font-style: 400px;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.card {
+   max-width: 350px;
+   max-height: 560px;
+   border: none;
+}
+
+.card-img {
+   margin-bottom: 30px;
+}
+
+.card-title {
+   margin-bottom: 30px;
+   font-family: 'Roboto', sans-serif;
+   font-style: Medium;
+   font-size: 24px;
+   line-height: 31px;
+}
+
+.card-text {
+   
+   Font-family: 'Roboto', sans-serif;
+   Font-style: 400;
+   Font-size: 16px;
+   Line-height: 24px;
+}
+
+.two {
+   margin-top: 151px;
+}
+
+.wave {
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 516px;
+   background-image: url(img/Волна.png);
+}
+
+.title-two {
+   margin-bottom: 113px;
+   font-family: 'Roboto', serif;
+   font-style: 500px;
+   font-size: 40px;
+   line-height: 47px;
+}
+
+/*Календарь*/
+.table {
+   padding: 10px;
+}
+
+td {
+   padding: 30px;
+}
+.text:hover {
+   color: #005aaa;
+}
+.strong {
+   font-weight: bold;
+}
+.strong:hover {
+   color: #eb1546;
+}
+.rating:hover {
+   color: #a32b9b;
+}
+.number {
+   color: #fff;
+   background-image: linear-gradient(90deg, #2056ae 0%, #2056ae 20%, #4e47a7 40%, #9a2e9c 60%, #c62072 80%);
+}
+
+.number td:hover {
+   transform: translate(5px, -5px);
+   transition: 0.2s linear;
+}
+
+.blue {
+   background-color: #F4F7FA;
+}
+
+.yellow {
+   background-color: #FFFCF0;
+}
+
+#start-date {
+   border: 3px solid #fff;
+   box-shadow: 2px 2px 15px rgb(21, 146, 48);
+}
+/* конец календаря*/
+
+.title-info {
+   margin-bottom: 60px;
+   font-family: 'Roboto', serif;
+   font-style: 500px;
+   font-size: 40px;
+   line-height: 47px;
+}
+
+.list-group-item {
+   position: relative;
+   padding-top: 30px;
+   border-bottom: 1px solid #000;
+   max-width: 350px;
+   font-family: 'Roboto', serif;
+   font-style: 400;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.bi {
+   position: absolute;
+   left: 330px;
+}
+
+.bi:hover {
+   color: #4e47a7;
+   box-shadow: 1px 1px 15px violet;
+}
+
+.col-2 {
+   text-align: center;
+}
+
+.d-info {
+   margin-top: 20px;
+   font-family: 'Roboto', serif;
+   font-style:400;
+   font-size: 20px;
+   line-height: 26px;
+}
+
+.date {
+   max-width: 255px;
+   max-height: 300px;
+   background: linear-gradient(180deg, #F4F7FA 0%, rgba(244, 247, 250, 0) 100%);
+   margin-left: 30px;
+   padding: 42px 0px 0px 20px;
+}
+
+.date-text {
+   font-family: 'Roboto', sans-serif;;
+   color: #000;
+   font-size: 16px;
+   line-height: 21px;
+}
+
+.btn-day {
+   margin-top: 40px;
+   padding: 10px 22px;
+   background-color: #005AAA;
+   color: #fff;
+   font-size: 14px;
+   border-radius: 40px;
+   border: none;
+}
+
+.btn-day:hover {
+   background-color: #0770cc;
+}
+
+.review {
+   max-width: 539px;
+   max-height: 461px;
+}
+
+.card-text {
+   font-family: 'Roboto', serif;
+   font-style: 400;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+.name-user {
+   margin-top: 50px;
+   color: #005AAA;
+}
+
+.student {
+   color: #005AAA;
+   text-decoration: underline;
+}
+
+.map-text {
+   color: #000;
+   font-size: 20px;
+   font-weight: normal;
+   line-height: 30px;
+   font-family: 'Roboto', serif;
+}
+
+.picture {
+   margin-top: 120px;
+   width: 100%;
+   min-height: 968px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(./img/bm\ 1.png);
+}
+
+.footer {
+   padding: 90px;
+   min-height: 376px;
+   background: #24323E;
+   color: #fff;
+}
+
+.logo-footer {
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.icon-footer {
+
+   position: absolute;
+   left: 420px;
+}
+
+.serch {
+   position: relative;
+   padding-left: 280px;
+}
+
+.line {
+   position: absolute;
+   left: auto;
+   border: 1px solid rgba(255, 255, 255, 1)
+}
+
+.mode {
+   margin-top: 24px;
+}
+
+.confy {
+   margin-top: 43px;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:469px) {
+   .btn {
+      margin: 10px 20px;
+   }
+}
+
