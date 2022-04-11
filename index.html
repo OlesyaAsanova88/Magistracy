@@ -8,6 +8,7 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
    <link rel="stylesheet" href="style.css">
    <title>Магистратура</title>
 </head>
@@ -28,7 +29,7 @@
                         <li class="nav-item">
                            <a class="nav-link menu" href="#"><span class="menu-nav">Поступающим</span></a>
                         </li>
-                        <li class="nav-item #">
+                        <li class="nav-item">
                            <a class="nav-link menu" href="#"><img class="icon" src="img/user.png"><span
                                  class="menu-nav">Личный кабинет
                                  поступающего</span></a>
@@ -49,7 +50,7 @@
       </div>
    </div>
 
-   <div class="container">
+   <div class="container category  navbar-collapse" id="navbarText">
       <div class="row">
          <div class="col">
             <ul class="nav nav-pills ">
@@ -81,14 +82,14 @@
    <div class="container-fluid space">
       <div class="row">
          <div class="col">
-            <div class="container abut">
+            <div class="container abut  navbar-collapse" id="navbarText">
                <nav class="nav">
-                  <a class="nav-link active" aria-current="page" href="#"><img src="img/carbon_education.png"
-                        alt=""></a>
-                  <a class="nav-link sub-link" href="#">Направления</a>
-                  <a class="nav-link sub-link" href="#">Правила приема</a>
-                  <a class="nav-link sub-link" href="#">Экзамены</a>
-                  <a class="nav-link sub-link sub-lust" href="#">Документы</a>
+                  <div><img src="img/carbon_education.png" alt=""></div>
+                  <div class="sub-column"><a class="nav-link sub-link" href="#">Направления</a>
+                     <a class="nav-link sub-link" href="#">Правила приема</a>
+                     <a class="nav-link sub-link" href="#">Экзамены</a>
+                     <a class="nav-link sub-link sub-lust" href="#">Документы</a>
+                  </div>
                   <div class="two-btn">
                      <button type="button" class="btn btn-outline-dark">Задать вопрос</button>
                      <button type=" button" class="btn btn-two">Подать заявление</button>
@@ -138,9 +139,10 @@
 
    <!--Section Card-->
 
-   <div class="container">
-      <div class="row">
-         <div class="col-4">
+   <div class="container swiper mySwiper">
+      <div class="row swiper-wrapper">
+
+         <div class="col swiper-slide">
             <div class="card">
                <img src="img/Illustration.png" class="card-img" alt="...">
                <div class="card-body">
@@ -151,7 +153,9 @@
                </div>
             </div>
          </div>
-         <div class="col-4">
+
+
+         <div class="col swiper-slide">
             <div class="card">
                <img src="img/Illustration (1).png" class="card-img" alt="...">
                <div class="card-body">
@@ -162,7 +166,9 @@
                </div>
             </div>
          </div>
-         <div class="col-4">
+
+
+         <div class="col swiper-slide">
             <div class="card">
                <img src="img/Illustration (2).png" class="card-img" alt="...">
                <div class="card-body">
@@ -173,7 +179,11 @@
                </div>
             </div>
          </div>
+
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
    </div>
 
    <!--Этапы поступления-->
@@ -305,27 +315,27 @@
 
    <!--конец календаря-->
 
-   <div class="container two">
+   <div class="container info">
       <h2 class="title-info">Оперативная информация </h2>
    </div>
 
    <div class="container">
       <div class="row">
-         <div class="col-4">
+         <div class="col-4 info-item">
             <ul class="list-group list-group-flush">
                <li class="list-group-item">Расписание испытаний<i class="bi bi-arrow-up-right"></i></li>
                <li class="list-group-item">Приказы о зачислении<i class="bi bi-arrow-up-right"></i></li>
                <li class="list-group-item lust">Места в общежитии<i class="bi bi-arrow-up-right"></i></li>
             </ul>
          </div>
-         <div class="col-4">
+         <div class="col-4 info-item">
             <ul class="list-group list-group-flush">
                <li class="list-group-item">Количество заявлений<i class="bi bi-arrow-up-right"></i></li>
                <li class="list-group-item">Ситуация с COVID19<i class="bi bi-arrow-up-right"></i></li>
                <li class="list-group-item">Стипендия<i class="bi bi-arrow-up-right"></i></li>
             </ul>
          </div>
-         <div class="col-4">
+         <div class="col-4 info-item">
             <ul class="list-group list-group-flush">
                <li class="list-group-item">Конкурсные списки<i class="bi bi-arrow-up-right"></i></li>
                <li class="list-group-item">Контакты ответственных<i class="bi bi-arrow-up-right"></i></li>
@@ -335,13 +345,13 @@
       </div>
    </div>
 
-   <div class="container two">
+   <div class="container info">
       <h2 class="title-info">Список образовательных программ <img src="img/52.png" alt=""></h2>
    </div>
 
    <div class="container">
       <div class="row">
-         <div class="col-4">
+         <div class="col-4 list-info">
             <h4>Б</h4>
             <p>Биотехнические системы и технологии<br /> для здравоохранения</p>
             <h4>В</h4>
@@ -369,7 +379,7 @@
             </p>
             <p>Корпоративные информационные системы</p>
          </div>
-         <div class="col-4">
+         <div class="col-4 list-info">
             <h4>Л</h4>
             <p>Лазерные приборы и системы
             </p>
@@ -398,7 +408,7 @@
             <p>Реклама и связи с общественностью в сфере<br /> социальных инноваций</p>
             <p>Россия в мировой политике</p>
          </div>
-         <div class="col-4">
+         <div class="col-4 list-info">
             <h4>С</h4>
             <p>Системные исследования в задачах<br /> управления</p>
             <p>Системный анализ в информационных<br /> технологиях</p>
@@ -431,68 +441,68 @@
       </div>
    </div>
 
-   <div class="container two">
+   <div class="container info">
       <h2 class="title-info">Дополнительная информация</h2>
    </div>
 
    <div class="container">
       <div class="row">
-         <div class="col-2">
+         <div class="col-2 info-icon">
             <img src="img/noun_graduation_2077867 1.png" alt="">
             <p class="d-info">Отсрочка <br /> от армии</p>
          </div>
-         <div class="col-2">
+         <div class="col-2 info-icon">
             <img src="img/Frame 2.png" alt="">
             <p class="d-info">Программы<br /> обмена</p>
          </div>
-         <div class="col-2">
+         <div class="col-2 info-icon">
             <img src="img/noun_Money Bag_898889.png" alt="">
             <p class="d-info">Стипендии</p>
          </div>
-         <div class="col-2">
+         <div class="col-2 info-icon">
             <img src="img/noun_buildings_1217090 1.png" alt="">
             <p class="d-info">Общежития</p>
          </div>
-         <div class="col-2">
+         <div class="col-2 info-icon">
             <img src="img/noun_manager_1771868.png" alt="">
             <p class="d-info">Трудоустройство</p>
          </div>
-         <div class="col-2">
+         <div class="col-2 info-icon">
             <img src="img/тВОРЧЕСТВО.png" alt="">
             <p class="d-info">Творчество</p>
          </div>
       </div>
    </div>
 
-   <div class="container two">
+   <div class="container info">
       <h2 class="title-info">Дни открытых дверей</h2>
    </div>
 
    <div class="container">
       <div class="row">
          <div class="col-3 date">
-            <h3>9 декабря, 16:00 </h3>
+            <h3 class="date-title">9 декабря, 16:00 </h3>
             <p>Ленсовета 14 </p>
             <p class="date-text">День открытых дверей <br />
                для поступающих <br />в магистратуру </p>
             <button class="btn-day" type="button">Подробнее</button>
          </div>
          <div class="col-3 date">
-            <h3>24 декабря, 13:00 </h3>
+            <h3 class="date-title">24 декабря, 13:00 </h3>
             <p>онлайн</p>
             <p class="date-text">День открытых дверей<br />
                образовательной программы <br />«Интернет вещей»</p>
             <button class="btn-day" type="button">Регистрация</button>
          </div>
          <div class="col-3 date">
-            <h3>5 февраля, 12:00 </h3>
+            <h3 class="date-title">5 февраля, 12:00 </h3>
             <p>Б. Морская, 67, ауд. 53-03 </p>
             <p class="date-text">День открытых дверей <br />
                института аэрокосмических <br />приборов и систем</p>
             <button class="btn-day" type="button">Подробнее</button>
          </div>
          <div class="col-3 date">
-            <h3>19 февраля, 16:00</h3>
+            <h3 class="date-title">19 февраля, 16:00</h3>
             <p>Точка кипения</p>
             <p class="date-text">День открытых дверей<br />
                международных<br />образовательных программ
@@ -502,13 +512,13 @@
       </div>
    </div>
 
-   <div class="container two">
 
+   <div class="container info">
       <div class="row g-1">
-         <div class="col">
+         <div class="col-6 ">
             <img src="img/gerl.png" class="avatar" alt="user avatar">
          </div>
-         <div class="col review">
+         <div class="col-6 review">
             <p class="card-text">– Для меня самое главное достижение – это завершенная магистерская диссертация.
             </p>
             <p class="card-text">По тематике этого исследования было написано несколько статей и получен патент.
@@ -526,7 +536,11 @@
       </div>
    </div>
 
-   <div class="container two">
+   <div class="container info">
+      <h2 class="title-info">Приемная комиссия</h2>
+   </div>
+
+   <div class="container">
       <div class="row">
          <div class="col">
             <div style="position:relative;overflow:hidden;"><a
@@ -536,7 +550,6 @@
                   allowfullscreen="true" style="position:relative;"></iframe></div>
          </div>
          <div class="col">
-            <h2 class="title-info">Приемная комиссия</h2>
             <p class="map-text">Санкт-Петербург, ул. Якубовича, д. 26<br />
                Телефон: (812) 312-21-07<br />
                Электронная почта: priem@guap.ru</p>
@@ -547,7 +560,7 @@
       </div>
    </div>
 
-   <div class="container-fluid picture">
+   <div class="container-fluid picture info">
       <div class="row">
          <div class="col">
             <div class="container">
@@ -561,27 +574,36 @@
    <div class="container-fluid footer">
       <div class="container">
          <div class="row">
-            <div class="col-4">
+            <div class="col-4 footer-item">
                <img class="logo-footer" src="img/logo-footer.png" alt="">
-               <div class="icon-footer">
-                  <img src="img/la_vk.png" alt="vk">
-                  <img src="img/la_youtube.png" alt="youtube">
-               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 footer-item">
                <h3>Приемная комиссия</h3>
                <p>Санкт-Петербург, ул. Якубовича, д. 26<br />
                   Телефон: (812) 312-21-07<br />
                   Электронная почта: priem@guap.ru
                </p>
-               <p class="confy">Политика конфиденциальности</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 footer-item">
                <img class="serch" src="img/Иконка поиска.png" alt="">
                <div class="line-footer"></div>
                <p class="mode">Режим работы:<br />
                   ПН–ПТ — с 10:00 до 18:00<br />
                   СБ, ВС — выходные дни</p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-4">
+               <div class="icon-footer">
+                  <a href="https://vk.com/guap_ru"> <img src="img/la_vk.png" alt="vk"></a>
+                  <a href="https://www.youtube.com/channel/UC47_JUbzSmZzlEWBjWnVWBQ"> <img src="img/la_youtube.png"
+                        alt="youtube"></a>
+               </div>
+            </div>
+            <div class="col-4">
+               <p class="confy">Политика конфиденциальности</p>
             </div>
          </div>
       </div>
@@ -595,6 +617,8 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="app.js"></script>
 </body>
 
 </html>

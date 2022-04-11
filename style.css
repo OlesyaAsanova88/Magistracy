@@ -71,6 +71,7 @@ color: #005AAA;
 }
 
 .sub-link {
+   display: inline;
    font-size: 16px;
    color: #000;
    margin-right: 50px;  
@@ -147,8 +148,8 @@ color: #005AAA;
 }
 
 .card {
-   max-width: 350px;
-   max-height: 560px;
+
+   height: fit-content;
    border: none;
 }
 
@@ -157,7 +158,6 @@ color: #005AAA;
 }
 
 .card-title {
-   margin-bottom: 30px;
    font-family: 'Roboto', sans-serif;
    font-style: Medium;
    font-size: 24px;
@@ -165,15 +165,30 @@ color: #005AAA;
 }
 
 .card-text {
-   
    Font-family: 'Roboto', sans-serif;
    Font-style: 400;
    Font-size: 16px;
    Line-height: 24px;
 }
 
+.swiper-pagination,
+.swiper-button-prev,
+.swiper-button-next {
+   display: none;
+}
+
 .two {
-   margin-top: 151px;
+   margin-top: 150px;
+}
+
+
+.title-two {
+   margin-top: 150px;
+   margin-bottom: 113px;
+   font-family: 'Roboto', serif;
+   font-style: 500px;
+   font-size: 40px;
+   line-height: 47px;
 }
 
 .wave {
@@ -182,14 +197,6 @@ color: #005AAA;
    background-size: cover;
    min-height: 516px;
    background-image: url(img/Волна.png);
-}
-
-.title-two {
-   margin-bottom: 113px;
-   font-family: 'Roboto', serif;
-   font-style: 500px;
-   font-size: 40px;
-   line-height: 47px;
 }
 
 /*Календарь*/
@@ -365,12 +372,16 @@ td {
 
 .serch {
    position: relative;
-   padding-left: 280px;
+   padding-left: 330px;
 }
 
 .line-footer {
    position: absolute;
-   left: auto;
+   min-width: 350px;
+   height: 1px;
+   
+   left:auto;
+
    border: 1px solid rgba(255, 255, 255, 1)
 }
 
@@ -386,22 +397,231 @@ td {
 
 
 
+@media (max-width:1200px){
+
+   .body {
+      margin: 0;
+      padding: 0;
+   }
+
+   .choice {
+      position: relative;
+      margin-top: 15px;
+      font-family: 'Roboto',sans-serif;
+      font-style: 400;
+      font-size: 16px;
+      line-height: 24px;
+   }
+
+   .line {
+      position: absolute;
+      left: 85px;
+      width: 158px;
+      height: 3px;
+   }
+
+
+   .head {
+      margin-top: 60px;
+   font-family: 'Roboto', sans-serif;
+   font-style: Medium;
+   font-size: 26px;
+   line-height: 34px;
+   }
+
+   .num {
+      font-family: 'Roboto', sans-serif  ;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+   }
+
+   .num-text {
+      Font-family: Roboto;
+      Font-style: Regular;
+      Font-size: 10px;
+      Line-height: 12px;
+   }
+   .navbar-toggler {
+      border: none;
+   }
+
+   .info-icon {
+      min-width: 300px;
+   }
+
+}
 
 
 
 
+@media (max-width:468px) {
+   body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+   .header {
+      min-width: 10px;/*проверить высоту*/
+   }
 
+   .menu {
+      margin: 10px;
+      text-align: center;
+      align-items: center;
+   }
+   .phone {
+      margin-left: 80px;
+   }
 
+   .sub-link {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+   }
+   
 
-
-
-
-
-
-
-@media (max-width:469px) {
    .btn {
-      margin: 10px 20px;
+      display: none;
+   }
+
+   .numeric {
+      margin-top: 40px;
+      margin-bottom: 0px;
+   }
+
+
+   .space {
+      min-height: 377px;
+   }
+   .two {
+      margin-top: 0px;
+   }
+   .title-two {
+      margin-top: 57px;
+      margin-bottom: 53px;
+      font-family: 'Roboto', sans-serif;
+      font-style: Medium;
+      font-size: 20px;
+      line-height: 23px;
+   }
+
+   .card-title {
+      font-family: 'Roboto',sans-serif;
+   font-style: 500;
+   font-size: 20px;
+   line-height: 26px;
+   }
+   .card-text {
+      font-family: 'Roboto', sans-serif;
+      font-style: 400;
+      font-size: 15px;
+      line-height: 23px;
+   }
+   
+   .swiper {
+      width: 100%;
+      height: 100%;
+   }
+
+   .swiper-slide {
+      text-align: center;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+   }
+
+   .info {
+      margin-top: 90px;
+   }
+   .title-info {
+      margin-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-style: 500;
+      font-size: 20px;
+      line-height: 23px;
+   }
+   .info-item {
+      min-width: 339px;
+   }
+   .list-group-item {
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-style: 400;
+      font-size: 14px;
+      line-height: 18px;
+   }
+   .bi {
+      position: absolute;
+      left: 280px;
+   }
+   .list-info {
+      min-width: 338px;
+   }
+   .info-icon {
+      min-width: 300px;
+   }
+   .date {
+      min-width: 270px;
+      height: fit-content;
+      margin-bottom: 30px;
+   }
+   .date-title {
+      font-family:'Roboto', sans-serif;
+      font-style: Medium;
+      font-size: 20px;
+      line-height: 26px;
+   }
+   .date-text {
+      font-family: 'Roboto', sans-serif;
+      font-style: 400;
+      font-size: 20px;
+      line-height: 26px;
+   }
+   .avatar {
+      max-width: 338px;
+      max-height: 338px;
+   }
+   .review {
+      min-width: 300px;
+      min-height: 600px;
+   }
+   .map-text {
+      margin-top: 40px;
+      font-family: 'Roboto', sans-serif;
+      font-style: 400;
+      font-size: 14px;
+      line-height: 21px;
+   }
+
+   .picture {
+      
+      width: 100%;
+      min-height: 488px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/bm\ 1.png);
+   }
+   .footer {
+      padding: 30px 10px 50px 10px;
+      min-height: 376px;
+      background: #24323E;
+      color: #fff;
+      margin: 0 auto;
+   }
+   .footer-item {
+     min-width: 300px;
    }
 }
 
