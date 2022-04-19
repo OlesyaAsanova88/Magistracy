@@ -9,7 +9,7 @@ color: #005AAA;
 
 }
 .menu-nav:hover {
-   color: #0770cc;
+   color: #f5286cfd;
    
 }
 
@@ -171,9 +171,8 @@ color: #005AAA;
    Line-height: 24px;
 }
 
-.swiper-pagination,
-.swiper-button-prev,
-.swiper-button-next {
+
+.buttons {
    display: none;
 }
 
@@ -242,6 +241,10 @@ td {
    box-shadow: 2px 2px 15px rgb(21, 146, 48);
 }
 /* конец календаря*/
+
+.info {
+   margin-top: 90px;
+}
 
 .title-info {
    margin-bottom: 60px;
@@ -446,6 +449,8 @@ td {
       border: none;
    }
 
+   
+
    .info-icon {
       min-width: 300px;
    }
@@ -506,11 +511,26 @@ td {
       line-height: 23px;
    }
 
+   .card {
+      display: none;
+   }
+   #one {
+      margin-top: 30px;
+      width: 300px; 
+      height: 450px;    
+      display: block;
+   }
+
+   .buttons {
+      display: block;
+      margin-top: 100px;
+   }
+
    .card-title {
       font-family: 'Roboto',sans-serif;
-   font-style: 500;
-   font-size: 20px;
-   line-height: 26px;
+      font-style: 500;
+      font-size: 20px;
+      line-height: 26px;
    }
    .card-text {
       font-family: 'Roboto', sans-serif;
@@ -519,32 +539,19 @@ td {
       line-height: 23px;
    }
    
-   .swiper {
-      width: 100%;
-      height: 100%;
+   .dots {
+      width: 10px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 0 auto;
    }
 
-   .swiper-slide {
-      text-align: center;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-   }
 
    .info {
       margin-top: 90px;
    }
+
    .title-info {
       margin-bottom: 30px;
       font-family: 'Roboto', sans-serif;
