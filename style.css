@@ -23,6 +23,13 @@ color: #005AAA;
    border-left: 1px solid #005AAA;
    color: #005AAA;
 }
+.mobil-nav {
+   display: none;
+}
+.mobil-icon {
+   display: none;
+}
+
 
 .icon {
    margin-right: 10px;
@@ -95,6 +102,9 @@ color: #005AAA;
    color: #fff;
    background-color: #0770cc;
    
+}
+.btn-mobil {
+   display: none;
 }
 
 .title {
@@ -365,12 +375,17 @@ td {
 .logo-footer {
    position: relative;
    margin-bottom: 30px;
+   
 }
 
 .icon-footer {
 
    position: absolute;
-   left: 420px;
+   margin: 0 100px;
+}
+
+.footer-item {
+   margin-top: 20px;
 }
 
 .serch {
@@ -385,7 +400,7 @@ td {
    
    left:auto;
 
-   border: 1px solid rgba(255, 255, 255, 1)
+   border: 1px solid rgba(255, 255, 255, 0.575)
 }
 
 .mode {
@@ -393,7 +408,7 @@ td {
 }
 
 .confy {
-   margin-top: 43px;
+   margin-top: 15px;
    color: rgba(255, 255, 255, 0.5);
 }
 
@@ -455,6 +470,32 @@ td {
       min-width: 300px;
    }
 
+   .avatar {
+      max-width: 338px;
+      max-height: 338px;
+   }
+
+   .review {
+      min-width: 300px;
+      min-height: 600px;
+   }
+
+   .card-text {
+      font-size: 14px;
+   }
+
+   .name-user {
+      font-size: 16px;
+   }
+   .card-text-sm {
+      font-size: 14px;
+   }
+
+}
+
+@media (max-width:769px) {
+ 
+   
 }
 
 
@@ -466,14 +507,36 @@ td {
       margin: 0;
       padding: 0;
    }
-   .header {
-      min-width: 10px;/*проверить высоту*/
+  
+   
+
+   .navbar-brand {
+      margin: 0;
+      
+    
+   }
+   .menu {
+      margin-left: 5px;
+      text-align: center;
    }
 
-   .menu {
-      margin: 10px;
-      text-align: center;
-      align-items: center;
+   .mobil-nav {
+      display: block;
+      padding-left: 5px;
+   }
+   .navbar-toggler-icon {
+      margin-left: 0;
+      padding-left: 0;
+   }
+   
+   .mobil-icon {
+      display: block;
+      margin-left: 15px;
+      padding: 0;
+   }
+
+   .mobil-icon {
+     border: none;
    }
    .phone {
       margin-left: 80px;
@@ -486,9 +549,21 @@ td {
    }
    
 
-   .btn {
+   .two-btn {
       display: none;
    }
+   .btn-mobil {
+      margin: 100px 0;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      display: block;
+      display: flex;
+      line-height: 15px;
+      font-size: 13px;
+      border-radius: 30%;
+   }
+
 
    .numeric {
       margin-top: 40px;
@@ -514,7 +589,9 @@ td {
    .card {
       display: none;
    }
-   #one {
+   #one,
+   #two,
+   #three {
       margin-top: 30px;
       width: 300px; 
       height: 450px;    
@@ -523,7 +600,24 @@ td {
 
    .buttons {
       display: block;
-      margin-top: 100px;
+      margin-left: 100px;
+   }
+   .next
+    {
+       margin-left: 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      background-color: #C4C4C4;
+   }
+   .prev {
+      margin-left: 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: none;
+      background-color: #C4C4C4;
    }
 
    .card-title {
@@ -573,8 +667,9 @@ td {
       position: absolute;
       left: 280px;
    }
+  
    .list-info {
-      min-width: 338px;
+      min-width: 338px; 
    }
    .info-icon {
       min-width: 300px;
@@ -584,6 +679,7 @@ td {
       height: fit-content;
       margin-bottom: 30px;
    }
+ 
    .date-title {
       font-family:'Roboto', sans-serif;
       font-style: Medium;
@@ -603,6 +699,7 @@ td {
    .review {
       min-width: 300px;
       min-height: 600px;
+
    }
    .map-text {
       margin-top: 40px;
@@ -628,7 +725,30 @@ td {
       margin: 0 auto;
    }
    .footer-item {
-     min-width: 300px;
+      min-width: 300px;
+   }
+
+   .serch {
+      position: relative;
+      padding-left: 230px;
+   }
+   
+   .line-footer {
+      position: absolute;
+      min-width: 250px;
+      height: 1px;
+      
+      left:auto;
+   
+      border: 1px solid rgba(255, 255, 255, 0.575)
+   }
+   .icon-footer {
+      display: flex;
+   }
+
+   .confy {
+      margin-top: 55px;
+      color: rgba(255, 255, 255, 0.5);
    }
 }
 

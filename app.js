@@ -1,5 +1,5 @@
-var btn_prev = document.querySelector('#gallery . buttons .prev');
-var btn_next = document.querySelector('#gallery . buttons .next');
+var btn_prev = document.querySelector('#gallery .buttons .prev');
+var btn_next = document.querySelector('#gallery .buttons .next');
 
 var cards = document.querySelectorAll('#gallery .card');
 var i = 0
